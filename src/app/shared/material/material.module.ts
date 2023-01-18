@@ -6,7 +6,8 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatInputModule } from '@angular/material/input';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatMenuModule } from '@angular/material/menu';
-// import { MatMenuModule } from '@angular/material/footer';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatChipsModule } from '@angular/material/chips';
 
 @NgModule({
   declarations: [],
@@ -18,6 +19,8 @@ import { MatMenuModule } from '@angular/material/menu';
     MatInputModule,
     MatGridListModule,
     MatMenuModule,
+    MatFormFieldModule,
+    MatChipsModule
   ],
   exports: [
     MatToolbarModule,
@@ -25,6 +28,8 @@ import { MatMenuModule } from '@angular/material/menu';
     MatButtonToggleModule,
     MatGridListModule,
     MatMenuModule,
+    MatFormFieldModule,
+    MatChipsModule
   ],
 })
 export class MaterialModule {}
