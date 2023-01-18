@@ -12,7 +12,8 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$prepare-ton-bowlcake-primary: mat.define-palette(mat.$indigo-palette);
+$prepare-ton-bowlcake-primary: mat.define-palette(mat.$pink-palette, 800);
+// $prepare-ton-bowlcake-primary: mat.define-palette(mat.$indigo-palette);
 $prepare-ton-bowlcake-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
 
 // The warn palette is optional (defaults to red).
@@ -23,6 +24,7 @@ $prepare-ton-bowlcake-warn: mat.define-palette(mat.$red-palette);
 $prepare-ton-bowlcake-theme: mat.define-light-theme((
   color: (
     primary: $prepare-ton-bowlcake-primary,
+    // primary: $prepare-ton-bowlcake-primary,
     accent: $prepare-ton-bowlcake-accent,
     warn: $prepare-ton-bowlcake-warn,
   )
@@ -37,3 +39,38 @@ $prepare-ton-bowlcake-theme: mat.define-light-theme((
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+app-root {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+
+}
+
+span, button {
+  font-weight: 400;
+}
+button {
+  text-transform: uppercase;
+}
+
+main {
+  flex: 1;
+  overflow-y: scroll;
+  // justify-self: flex-start;
+  // height: 100%;
+}
+.center-box {
+  margin:auto;
+}
+.center-text {
+  text-align:center;
+}
+.size-medium {
+  font-size: 16px;
+}
+.size-large {
+  font-size: 20px;
+  // font-weight: 500;
+}

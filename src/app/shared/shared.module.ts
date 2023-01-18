@@ -2,18 +2,18 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { SharedRoutingModule } from './shared-routing.module';
-import { IngredientComponent } from './models/ingredient/ingredient.component';
-import { BowlcakeComponent } from './models/bowlcake/bowlcake.component';
+import { MaterialModule } from './material/material.module';
+
 
 
 @NgModule({
   declarations: [
-    IngredientComponent,
-    BowlcakeComponent
+
+
   ],
   imports: [
     CommonModule,
-    SharedRoutingModule
-  ]
+    SharedRoutingModule, MaterialModule
+  ], exports: [MaterialModule]
 })
 export class SharedModule { }
